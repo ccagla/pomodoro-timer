@@ -17,18 +17,27 @@ function startTimer() {
             return;
         }
         time--;
-        updateTime();
+        updateTimer();
     }, 1000);
 }
 
-//startTimer();
+startTimer();
+startBtn.addEventListener("click", startTimer);
 
-function updateTime() {
+
+function updateTimer() {
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
 
     const formattedSeconds = seconds < 10 ? "0" + seconds : seconds;
 
     timeDisplay.textContent = `${minutes}:${formattedSeconds}`
+};
+
+function stopTimer() {
+    clearInterval(interval);
+    interval = null;
 }
+stopTimer();
+pauseBtn.addEventListener("click", stopTimer);
 

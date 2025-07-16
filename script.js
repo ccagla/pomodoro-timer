@@ -41,3 +41,11 @@ function stopTimer() {
 stopTimer();
 pauseBtn.addEventListener("click", stopTimer);
 
+function resetTimer() {
+    clearInterval(interval);
+    interval = null;
+    time = 25 * 60;
+    updateTimer();
+}
+
+resetBtn.addEventListener("click" , resetTimer);

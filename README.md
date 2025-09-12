@@ -24,3 +24,7 @@ Start , stop and reset a 25-minute focused work session using clean UI and intui
 
 I'm a frontend developer in progress — building real-world projects and learning by doing.  
 Check out more on my [GitHub](https://github.com/ccagla).
+
+
+## 🚀 Live Demo
+[View Project](https://ccagla.github.io/pomodoro-timer/)
